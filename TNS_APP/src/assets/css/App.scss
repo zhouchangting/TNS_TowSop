@@ -1,0 +1,111 @@
+.App{
+  .my_header{
+    header{
+      position: relative;
+      z-index: 150;
+      height: 44px;
+      background-color: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        color: #ff3c3c;
+        font-size: .3rem;
+        line-height: 30px;
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 23px;
+        height: 30px;
+        text-align: center;
+        padding: 0 5px;
+        font-weight: 800;
+      }
+      h1 {
+        width: 50%;
+        height: 44px;
+        line-height: 44px;
+        margin: 0 auto;
+        font-size: .3rem;
+        text-align: center;
+        font-weight: normal;
+        color: #000;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .shop_rightBox{
+      position: absolute;
+      z-index: 500;
+      top: 0.02rem;
+      right: 0.45rem;
+      .icon{
+        color: red;
+        font-size: 0.5rem;
+        //font-weight: 600;
+      }
+      .more-list{
+        position: absolute;
+        z-index: 900;
+        right: 0;
+        top: 50px;
+        width: 135px;
+        box-sizing: border-box;
+        background-color: rgba(51,51,51,0.8);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 4.6rem;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 10px;
+          top: -12px;
+          width: 0;
+          height: 0;
+          border: 6px solid transparent;
+          border-bottom-color: rgba(51,51,51,0.8);
+        }
+        a {
+          position: relative;
+          display: block;
+          height: 44px;
+          line-height: 44px;
+          padding: 0 10px 0 17px;
+          color: #fff;
+          font-size: .3rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          background: rgba(51, 51, 51, 0);
+          width: 100%;
+          text-indent: -20px;
+          border-bottom: 2px solid #6B6B6B;
+
+          span:first-child {
+            display: inline-block;
+            width: 0;
+            height: 44px;
+            line-height: 44px;
+            margin-right: 15px;
+            text-align: center;
+            //font-size: .33rem;
+            color: #fff;
+            //font-weight: 800;
+            vertical-align: top;
+            margin-left: -.3rem;
+          }
+
+          .name {
+            padding-left: 1rem;
+            font-size: .3rem;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}

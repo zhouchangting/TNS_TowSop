@@ -1,0 +1,128 @@
+.addressBox {
+    background-color: #F6F6F6;
+    height: 13.3rem;
+    header {
+        position: relative;
+        z-index: 150;
+        height: 44px;
+        background-color: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-size: .3rem;
+            line-height: 30px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 23px;
+            height: 30px;
+            text-align: center;
+            padding: 0 5px;
+            font-weight: 800;
+            color: #ff5858;
+        }
+        h1 {
+            width: 50%;
+            height: 44px;
+            line-height: 44px;
+            margin: 0 auto;
+            font-size: .3rem;
+            text-align: center;
+            font-weight: normal;
+            color: #000;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .rightBox {
+            position: absolute;
+            right: 1.2rem;
+            align-items: center;
+            height: 100%;
+            a {
+                right: 5px;
+                display: block;
+                width: 50px;
+                height: 28px;
+                line-height: 28px;
+                padding: 0;
+                border-radius: 4px;
+                border: 1px solid #ddd;
+                background-color: #f5f5f5;
+                color: #333;
+                font-weight: normal;
+            }
+        }
+    }
+    .address-add {
+        background-color: white;
+        margin: 10px;
+        padding:0 15px;
+        border-radius: 5px;
+        p{
+            border-bottom: rgb(245,245,245) solid 1px;
+            margin: 0;
+            padding:0 10px;
+            display: flex;
+            span{
+                text-align: left;
+                width: 2rem;
+                font-size: 0.3rem;
+                display: inline-block;
+                height: 0.9rem;
+                line-height: 0.9rem;
+            }
+
+            input{
+                padding-left: 10px;
+                outline: none;
+                width: 100%;
+                border: none;
+                list-style: none;
+                height: 0.9rem;
+                line-height: 0.9rem;
+            }
+        }
+        .p5{
+            border-bottom: none;
+        }
+    }
+    .default{
+        margin: 10px;
+        border-radius: 5px;
+        background-color: white;
+        height: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+        font-size: 0.3rem;
+        align-items:center;
+
+    }
+    .address-append{
+        margin-top: 20px;
+        .p1{
+            width: 80%;
+            height: 0.8rem;
+            background-color: red;
+            color: white;
+            text-align: center;
+            margin: auto;
+            border-radius: 5px;
+            font-size: 0.3rem;
+            line-height: 0.8rem;
+        }
+        .p2{
+            width: 80%;
+            height: 0.8rem;
+            background-color: white;
+            //color: white;
+            text-align: center;
+            margin: 20px auto 0 auto;
+            border-radius: 5px;
+            font-size: 0.3rem;
+            line-height: 0.8rem;
+        }
+    }
+}

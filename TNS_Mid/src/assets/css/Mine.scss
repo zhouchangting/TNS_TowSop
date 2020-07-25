@@ -1,0 +1,203 @@
+.mineBox {
+    background: #F6F6F6;
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fe555d;
+        height: 44px;
+        z-index: 100;
+        border-bottom: 1px solid #fe555d;
+        .leftBox {
+            color: #fff;
+            font-size: .55rem;
+            line-height: 30px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 23px;
+            height: 30px;
+            text-align: center;
+            padding: 0 5px;
+        }
+        .rightBox {
+            right: -11px;
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            a {
+                display: block;
+                position: relative;
+                text-align: center;
+                vertical-align: middle;
+                background: none;
+                line-height: 44px;
+                color: #fff;
+                margin: 0;
+                padding: 0 10px;
+                font-size: .3rem;
+                min-width: 2rem;
+            }
+        }
+    }
+    .mypage {
+        .mine-page {
+            position: relative;
+            border-bottom: 1px solid #dedede;
+            top: 44px;
+            .member-avatar {
+                position: absolute;
+                left: 15px;
+                top: 10px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px rgba(255, 255, 255, 0.4) solid;
+                z-index: 190;
+                overflow: hidden;
+                img {
+                    display: block;
+                    width: 100%;
+                    border-radius: 50%;
+                    height: 100%;
+                }
+            }
+            .member-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 58px;
+                padding: 0 15px 0 90px;
+                color: #fff;
+                font-size: .3rem;
+                background-color: #fe555d;
+                border-top: 1px solid #fe555d;
+                box-sizing: border-box;
+                .name {
+                    display: flex;
+                    .content {
+                        margin-right: 10px;
+                        font-size: .3rem;
+                    }
+                    .bages {
+                        display: flex;
+                        align-items: center;
+                        span {
+                            background: url(../images/1.png) no-repeat left center;
+                            background-size: contain;
+                            display: block;
+                            width: 40px;
+                            height: 18px;
+                            border-radius: 40px;
+                            border: 1px solid #fe7370;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+                a {
+                    font-size: .4rem;
+                    color: #fff;
+                }
+            }
+            .member-property {
+                display: flex;
+                height: 52px;
+                padding-left: 80px;
+                background-color: #fff;
+                .item {
+                    display: flex;
+                    justify-content: center;
+                    flex: 1;
+                    align-items: center;
+                    text-decoration: none;
+                    .number {
+                        line-height: 18px;
+                        font-size: .2rem;
+                        color: #333;
+                    }
+                    .name {
+                        line-height: 18px;
+                        font-size: .2rem;
+                        color: #333;
+                    }
+                }
+                .item-two {
+                    border-right: 1px solid #e0e0e0;
+                }
+            }
+        }
+        .mine-block {
+            margin-top: 54px;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: #fff;
+            .mine-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 44px;
+                line-height: 44px;
+                padding: 0 15px;
+                border-bottom: 1px solid #e0e0e0;
+                .title {
+                    font-size: .3rem;
+                    color: #333;
+                }
+            }
+            .mine-content {
+                .item-list {
+                    display: flex;
+                    height: 84px;
+                    .items {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        flex: 1;
+                        align-items: center;
+                        text-decoration: none;
+                        .icon {
+                            font-size: .5rem;
+                            color: #999;
+                        }
+                        .name {
+                            margin-top: 8px;
+                            font-size: .25rem;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+        .mine-check {
+            border-bottom:  0 none;
+            margin-top: 10px;
+            background-color: #fff;
+            .mine-content {
+                background-color: #fff;
+                .item {
+                    float: left;
+                    width: 33.3%;
+                    height: 100px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #eee;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex: 1;
+                    align-items: center;
+                    text-decoration: none;
+                    background-color: #fff;
+                    .icon {
+                        color: #fc8485;
+                        font-size: .6rem;
+                    }
+                    .name {
+                        margin-top: 5px;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

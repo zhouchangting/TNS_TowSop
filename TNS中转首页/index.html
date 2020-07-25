@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNS商家</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<script src="./js/home.js"></script>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="nav">
+                <div><a href="https://baidu.com" class="logo"></a></div>
+                <div class="entry">
+                    <span class="state">我已有账户</span>
+
+                    <a href="https://baidu.com" target="_self" seed="">快速登录</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="wrap">
+                    <div class="slogan"></div>
+                    <div class="mid">
+                        <div class="main-entry">
+                            <a href="https://baidu.com" class="developer-login"><span class="title"><i
+                                        class="isv-developer"></i>我是店铺商</span><s></s></a>
+                            <a href="https://baidu.com" class="personal-developer-login"><span class="title"><i
+                                        class="developer"></i>我是超级管理员</span><s></s></a>
+                            <a href="https://baidu.com" class="personal-login"><span class="title"><i
+                                        class="personal"></i>我是个人用户</span><s></s></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="items">
+                    <div class="item item1" style="background-image: url(./img/1.jpg);">
+                    </div>
+                    <div class="item item2" style="background-image: url(./img/2.jpg); display: block;">
+                    </div>
+                    <div class="item item3" style="background-image: url(./img/3.jpg); display: block;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">TNS集团</a></a></li>
+                    <li>|</li>
+                    <li><a href="">服务商平台</a></a></li>
+                    <li>|</li>
+                    <li><a href="">快乐宝</a></li>
+                    <li>|</li>
+                    <li><a href="">钱多多</a></li>
+                    <li>|</li>
+                    <li><a href="">TNS商家中心</a></li>
+                    <li>|</li>
+                    <li><a href="">沙子信用</a></a></li>
+                    <li>|</li>
+                    <li><a href="">沙子微贷</a></li>
+                    <li>|</li>
+                    <li><a href="">TNS银</a>行</li>
+                    <li>|</li>
+                    <li><a href="">开放平台</a></li>
+                    <li>|</li>
+                    <li><a href="">诚征英才</a></li>
+                    <li>|</li>
+                    <li>联系我们：110-120-119-0000</li>
+                </ul>
+            </div>
+
+            <script>
+                var slideEle = slider($('.items'));
+
+                function slider(elem) {
+                    var items = elem.children(),
+                        max = items.length - 1,
+                        animating = false,
+                        currentElem,
+                        nextElem,
+                        pos = 0;
+
+                    sync();
+
+                    return {
+                        next: function () {
+                            move(1);
+                        },
+                        prev: function () {
+                            move(-1);
+                        },
+                        itemsNum: items && items.length
+                    };
+
+                    function move(dir) {
+                        if (animating) {
+                            return;
+                        }
+                        if (dir > 0 && pos == max || dir < 0 && pos == 0) {
+                            if (dir > 0) {
+                                nextElem = elem.children('div').first().remove();
+                                nextElem.hide();
+                                elem.append(nextElem);
+                            } else {
+                                nextElem = elem.children('div').last().remove();
+                                nextElem.hide();
+                                elem.prepend(nextElem);
+                            }
+                            pos -= dir;
+                            sync();
+                        }
+                        animating = true;
+                        items = elem.children();
+                        currentElem = items[pos + dir];
+                        $(currentElem).fadeIn(400, function () {
+                            pos += dir;
+                            animating = false;
+                        });
+                    }
+
+                    function sync() {
+                        items = elem.children();
+                        for (var i = 0; i < items.length; ++i) {
+                            items[i].style.display = i == pos ? 'block' : '';
+                        }
+                    }
+
+                }
+
+                if (slideEle.itemsNum && slideEle.itemsNum > 1) {
+                    setInterval(function () {
+                        slideEle.next();
+                    }, 4000)
+                }
+            </script>
+        </div>
+</body>
+
+</html>

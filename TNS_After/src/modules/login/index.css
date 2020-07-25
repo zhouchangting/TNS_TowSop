@@ -1,0 +1,35 @@
+body{
+    background: url('../../../public/images/login2.jpg') no-repeat center 100%;
+}
+#components-form-demo-normal-login{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+#components-form-demo-normal-login h1{
+    text-align: center;
+    color: #FFF;
+}
+#components-form-demo-normal-login #normal_login{
+    position: absolute;  
+    top:50%;left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+#components-form-demo-normal-login .login-form {
+    width: 300px;
+}
+#components-form-demo-normal-login .login-form-button {
+    width: 100%;
+}
+#components-form-demo-normal-login .ant-form-item-control-input-content{
+    height: 35px !important; 
+    display: flex;
+}
+#components-form-demo-normal-login img{
+    float: right;
+    height: 100%;
+}
+#components-form-demo-normal-login .icheckCode{
+    float: left;
+    height: 100%;
+}

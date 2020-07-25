@@ -1,0 +1,17 @@
+//......
+#img_father{
+    position: relative;
+    .img_big{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 96px;
+        display: none;
+    }
+    .img-wrap{
+        width: 32px;
+        img{
+            width: 100%;
+        }
+    }
+}

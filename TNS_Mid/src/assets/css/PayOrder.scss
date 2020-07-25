@@ -1,0 +1,279 @@
+.payorderBox {
+    background-color: #F6F6F6;
+    height: 13.3rem;
+    header {
+        position: relative;
+        z-index: 150;
+        height: 44px;
+        background-color: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-size: .3rem;
+            line-height: 30px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 23px;
+            height: 30px;
+            text-align: center;
+            padding: 0 5px;
+            font-weight: 800;
+            color: #ff3c3c;
+        }
+        h1 {
+            width: 50%;
+            height: 44px;
+            line-height: 44px;
+            margin: 0 auto;
+            font-size: .3rem;
+            text-align: center;
+            font-weight: normal;
+            color: #000;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .rightBox {
+            position: absolute;
+            right: 1.2rem;
+            align-items: center;
+            height: 100%;
+            a {
+                right: 5px;
+                display: block;
+                width: 50px;
+                height: 28px;
+                line-height: 28px;
+                padding: 0;
+                border-radius: 4px;
+                border: 1px solid #ddd;
+                background-color: #f5f5f5;
+                color: #333;
+                font-weight: normal;
+            }
+        }
+    }
+    container {
+        .header-top {
+            background: #fff;
+            height: 1.5rem;
+            .header-top-one {
+                padding: 0.35rem 0.3rem;
+                display: flex;
+                align-items: center;
+                .icon {
+                    font-size: 0.5rem;
+                    color: #ff3c3c;
+                    margin-right: 0.3rem;
+                }
+                .content {
+                    flex-direction: row;
+                    align-items: flex-end;
+                    .content-one {
+                        .one {
+                            float: left;
+                            text-align: left;
+                            font-size: .25rem;
+                            color: #666;
+                            margin-right: 0.3rem;
+                        }
+                        .two {
+                            float: left;
+                            font-size: .25rem;
+                            color: #666;
+                        }
+                    }
+                    .content-two {
+                        clear: both;
+                        margin-top: 0.2rem;
+                        font-size: .25rem;
+                        color: #666;
+                        margin-right: 0.3rem;
+                    }
+                }
+            }
+        }
+        .header-main {
+            margin-top: 0.2rem;
+            .header-main-one {
+                position: relative;
+                padding: 0.1rem 0.3rem;
+                background: #fff;
+                .main-one {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .left {
+                        img {
+                            width: 0.3rem;
+                            height: 0.3rem;
+                            margin-right: 0.2rem;
+                        }
+                        span {
+                            color: #000;
+                            font-size: .25rem;
+                        }
+                    }
+                    .right {
+                        .icon {
+                            font-size: .3rem;
+                            color: greenyellow;
+                            margin-right: 0.1rem;
+                        }
+                        .text {
+                            color: #333;
+                            font-size: .25rem;
+                        }
+                    }
+                }
+            }
+            .header-main-two {
+                position: relative;
+                padding: 0.1rem 0.3rem;
+                .main-one {
+                    display: flex;
+                    height: 2rem;
+                    justify-content: space-between;
+                    img {
+                        display: block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        margin-right: .2rem;
+                    }
+                    .main-two2 {
+                        flex: 1;
+                        .text {
+                            font-size: .25rem;
+                            color: #000;
+                            line-height: 19px;
+                            text-align: left;
+                        }
+                        span {
+                            color: #999;
+                            font-size: .2rem;
+                            line-height: 1;
+                            display: inline-block;
+                            width: 100%;
+                            text-align: left;
+                        }
+                    }
+                    .main-two3 {
+                        width: .6rem;
+                        display: flex;
+                        flex-direction: column;
+                        .money {
+                            font-size: .28rem;
+                            color: #000;
+                            text-align: right;
+                        }
+                        .num {
+                            font-size: .2rem;
+                            color: #999;
+                            text-align: right;
+                        }
+                    }
+                }
+                .main-two {
+                    .btn {
+                        float: right;
+                        width: 0.7rem;
+                        height: 0.2rem;
+                        font-size: .25rem;
+                        color: #ff3c3c;
+                        border: 1px solid #ff3c3c;
+                        background: #fff;
+                        text-indent: -26px;
+                        line-height: 27px;
+                        padding-bottom: .6rem;
+                        padding-top: 0;
+                    }
+                }
+            }
+            .header-main-three {
+                margin-top: .75rem;
+                background: #fff;
+                display: flex;
+                justify-content: space-between;
+                padding: .2rem .3rem;
+                .left {
+                    color: #666;
+                    font-size: .25rem;
+                }
+                .right {
+                    .text {
+                        color: #000;
+                        font-size: .25rem;
+                        .yuan {
+                            font-size: .3rem;
+                            color: #ff3c3c;
+                        }
+                    }
+                }
+            }
+        }
+        .header-order {
+            margin-top: .2rem;
+            background: #fff;
+            padding: .15rem .3rem;
+            .order-main {
+                p {
+                    margin-bottom: .1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .left {
+                        font-size: .25rem;
+                        color: #999;
+                        text-align: left;
+                    }
+                    .right {
+                        width: .8rem;
+                        height: .4rem;
+                        font-size: .25rem;
+                        color: #666;
+                        border: 1px solid #666;
+                        background: #fff;
+                        border-radius: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        height: 1rem;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        padding: .15rem .3rem;
+        .footer-main {
+            .remove {
+                float: right;
+                font-size: .25rem;
+                color: #333;
+                border: 1px solid #666;
+                width: 1.5rem;
+                height: .55rem;
+                text-align: center;
+                line-height: .5rem;
+                margin-right: .15rem;
+                border-radius: .1rem;
+            }
+            .again {
+                float: right;
+                font-size: .25rem;
+                color: #333;
+                border: 1px solid #666;
+                width: 1.5rem;
+                height: .55rem;
+                text-align: center;
+                line-height: .5rem;
+                border-radius: .1rem;
+            }
+        }
+    }
+}

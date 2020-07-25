@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="file" name="userImg" id="userImgUp" onchange="ff2(event)"/>
+<button id="qqq" onclick="ff()">dianwo</button>
+
+<script>
+	// let img = document.querySelector('#userImgUp').files[0]
+	let formData = new FormData()
+	let img
+    function ff2(e){
+	    img = e.target.files[0]
+	    formData.append('goods',img)
+	    formData.append('token','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoieW9uZ3hpb25nIiwiaWF0IjoxNTk1NjQ1MzAzLCJleHAiOjE1OTYyNTAxMDN9.y8Y5nukG_YlJDk9fS97Ow8yw6pfLyovX8FAQ7ElMI9Y')
+	    formData.append('userName','yongxiong')
+	    formData.append('id','480')
+    }
+
+
+	console.log(document.querySelector('#qqq'))
+    // document.querySelector('#qqq').onclick =
+	// http://10.3.141.27:8092/upload/goodsimg
+
+
+
+	function ff() {
+
+		console.log(img)
+		fetch('http://10.3.141.27:8092/upload/goodsimg', {
+			headers: {
+				// "Content-type": 'application/json',
+			},
+			method: 'post',
+			body:formData
+		}).then(res=>{
+			console.log(res)
+		})
+	}
+</script>
+</body>
+</html>

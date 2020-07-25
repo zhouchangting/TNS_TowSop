@@ -1,0 +1,168 @@
+.payBox {
+    .pay-content {
+        padding-bottom: 1rem;
+        .cashier-container {
+            background: #f7f6fb;
+            header {
+                text-align: center;
+                line-height: normal;
+                background: #fff;
+                .header-common {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 2.5rem;
+                    border-bottom: 4px solid #F7F6FB;
+                    .num {
+                        height: .45rem;
+                        color: #333;
+                        line-height: .4rem;
+                        font-family: UDC-Bold;
+                        font-size: 0;
+                        font-weight: 700;
+                        .yuan {
+                            font-size: .42rem;
+                        }
+                        .money {
+                            font-size: .65rem;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    }
+                    .order-num {
+                        font-size: .1rem;
+                        color: #999;
+                        margin-top: .05rem;
+                        line-height: .4rem;
+                        font-size: .2rem;
+                    }
+                }
+            }
+            .pay-container {
+                margin-top: .05rem;
+                .change-pay {
+                    background: #fff;
+                    .JD-pay {
+                        border-bottom: 4px solid #F7F6FB;
+                        .JD-pay-container {
+                            display: flex;
+                            justify-content: space-between;
+                            height: 1.5rem;
+                            position: relative;
+                            margin: 0 .34rem 0 .5rem;
+                            align-items: center;
+                            .leftBox {
+                                width: 90%;
+                                display: flex;
+                                justify-content: flex-start;
+                                .title-img {
+                                    line-height: .4rem;
+                                    text-align: left;
+                                    img {
+                                        vertical-align: middle;
+                                        width: 58%;
+                                    }
+                                }
+                            }
+                            .rightBox {
+                                position: relative;
+                                width: 10%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                align-items: center;
+                                font-size: .4rem;
+                                color: #ccc;
+                            }
+                            .red {
+                                color: #F40000;
+                            }
+                        }
+                    }
+                }
+            }
+            .pay-item { 
+                position: relative;
+                border-bottom: 1px solid #f7f6fb;
+                background: #fff;
+                .item-contain {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 .34rem 0 .5rem;
+                    align-items: center;
+                    height: 1.5rem;
+                    .item-left {
+                        width: 90%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        .icon-img {
+                            width: .4rem;
+                            height: 100%;
+                            padding-top: .06rem;
+                            box-sizing: border-box;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .title {
+                            font-size: .3rem;
+                            display: flex;
+                            align-items: flex-start;
+                            flex-direction: row;
+                            width: 80%;
+                            margin-left: .1rem;
+                            height: 1.5rem;
+                            align-items: center;
+                            img {
+                                width: 12%;
+                            }
+                        }
+                    }
+                    .rightBox {
+                        position: relative;
+                        width: 10%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        font-size: .4rem;
+                        color: #ccc;
+                    }
+                    .red {
+                        color: #F40000;
+                    }
+                }
+            }
+            footer {
+                width: 100%;
+                padding-bottom: env(safe-area-inset-bottom);
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                bottom: 0;
+                height: 1.3rem;
+                background: #fff;
+                box-shadow: 0 -0.01rem 0.05rem 0 rgba(0,0,0,.07);
+                z-index: 50;
+                .payBtn {
+                    height: .9rem;
+                    background: #f40000;
+                    border-radius: .2rem;
+                    font-weight: 700;
+                    font-size: .38rem;
+                    color: #fff;
+                    flex-direction: column;
+                    margin: .1rem .2rem;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

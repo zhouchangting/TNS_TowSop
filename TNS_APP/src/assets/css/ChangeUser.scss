@@ -1,0 +1,203 @@
+.changeuserBox {
+    background-color: #F6F6F6;
+    height: 13.3rem;
+    header {
+        position: relative;
+        z-index: 150;
+        height: 44px;
+        background-color: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        a {
+            color: #ff3c3c;
+            font-size: .3rem;
+            line-height: 30px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 23px;
+            height: 30px;
+            text-align: center;
+            padding: 0 5px;
+            font-weight: 800;
+        }
+        h1 {
+            width: 50%;
+            height: 44px;
+            line-height: 44px;
+            margin: 0 auto;
+            font-size: .3rem;
+            text-align: center;
+            font-weight: normal;
+            color: #000;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .rightBox {
+            position: absolute;
+            right: 0rem;
+            align-items: center;
+            height: 100%;
+            a {
+                right: 5px;
+                display: block;
+                width: 50px;
+                height: 28px;
+                line-height: 45px;
+                padding: 0;
+                color: #ff3c3c;
+                font-weight: normal;
+                border: 0;
+                font-size: .5rem;
+                background: #fff;
+                text-decoration: none;
+                text-indent: .8rem;
+            }
+            .more-list {
+                position: absolute;
+                z-index: 900;
+                right: 15px;
+                top: 66px;
+                width: 135px;
+                box-sizing: border-box;
+                background-color: rgba(51,51,51,0.8);
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 4.6rem;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 10px;
+                    top: -12px;
+                    width: 0;
+                    height: 0;
+                    border: 6px solid transparent;
+                    border-bottom-color: rgba(51,51,51,0.8);
+                }
+                a {
+                    position: relative;
+                    display: block;
+                    height: 44px;
+                    line-height: 44px;
+                    padding: 0 10px 0 17px;
+                    color: #fff;
+                    font-size: .3rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    background: rgba(51,51,51,0);
+                    width: 66%;
+                    text-indent: -20px;
+                    border-bottom: 2px solid #6B6B6B;
+                    span:first-child {
+                        display: inline-block;
+                        width: 20px;
+                        height: 44px;
+                        line-height: 44px;
+                        margin-right: 15px;
+                        text-align: center;
+                        font-size: .4rem;
+                        color: #fff;
+                        font-weight: 800;
+                        vertical-align: top;
+                        margin-left: -.3rem;
+                    }
+                    span .name {
+                        padding-left: 1rem;
+                        font-size: .3rem;
+                        font-weight: normal;
+                    }
+                }
+                a:first-child {
+                    margin-top: -7px;
+                }
+            }
+        }
+    }
+    .my-page {
+        max-width: 640px;
+        margin: 0 auto;
+        overflow: hidden;
+        .list-box {
+            margin-bottom: 10px;
+            border-top: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            background-color: #fff;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                line-height: 30px;
+                margin-left: 15px;
+                padding: 10px 0;
+                border-bottom: 1px solid #dedede;
+                color: #333;
+                font-size: .3rem;
+                text-decoration: none;
+                label {
+                    display: block;
+                    margin-right: 10px;
+                }
+                .my-box {
+                    flex: 1;
+                    text-align: right;
+                    .text {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                }
+                .icon {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: .3rem;
+                    color: #999;
+                }
+                .avatar {
+                    width: 60px;
+                    height: 60px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    
+                    background-size: 30px auto;
+                    vertical-align: top;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .phone {
+                    padding-right: .6rem;
+                }
+            }
+            a:last-child {
+                border-bottom:0;
+            }
+        }
+        .list-box:first-child {
+            border-top: 0;
+        }
+        .btn-box {
+            margin: 20px 10.667%;
+            a {
+                display: block;
+                height: 42px;
+                line-height: 42px;
+                border: 1px solid #fe555d;
+                border-radius: 5px;
+                font-size: .3rem;
+                background-color: #fe555d;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.ShopListBox {
+    width: 100%;
+    .header {
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin-bottom: 20px;
+        .leftBox {
+            float: left;
+            margin-top: 2px;
+        }
+        .rightBox {
+            width: 300px;
+            float: right;
+            margin-right: 10px;
+        }
+        .addshop {
+            border-left: 1px solid #ccc;
+            padding-left: 10px;
+            float: right;
+        }
+    }
+    .shopListMain {
+        height: 100%;
+        width: 100%;
+        .shopList-main {
+            margin-top: -10px;
+            padding-bottom: 40px;
+            .clearBtn {
+                margin-top: -37px;
+                display: inherit;
+            }
+            .table-con .ant-table-cell {
+                text-align: center;
+            }
+        }
+        .ant-table-pagination.ant-pagination {
+            margin: 6px 0;
+        }
+    }
+    .editable-row .ant-form-item-explain {
+        position: absolute;
+        top: 100%;
+        font-size: 12px;
+    }
+    .ant-upload-select-text {
+        margin-left: 24px;
+    }
+}

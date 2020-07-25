@@ -1,0 +1,54 @@
+// ...
+.edit-wrap{
+    .edit_top{
+        height: 146px;
+        margin-bottom: 10px;
+        text-align: center;
+        div:nth-child(1){
+            display: inline-block;
+            width: 128px;
+            height: 146px;
+            padding: 5px;
+            border: 2px dotted #CCC;
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            input{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                outline: none;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                z-index: 4;
+                cursor: pointer; 
+            }
+            div{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                color: #CCC;
+                text-align: center;
+            }
+        }
+        div:nth-child(1):hover{
+            border: 2px dotted #1890FF;
+            div{
+                color: #000;
+            }
+        }
+    }
+    .edit_bottom{
+        display: flex;
+        justify-content: space-around;
+        .edit_left{
+            margin-right: 5px;
+        }
+        .edit_right{
+            margin-left: 5px;
+        }
+    }
+}

@@ -16,7 +16,7 @@
     "@ant-design/icons": "^4.2.1",
     "@babel/plugin-proposal-decorators": "^7.10.4",
     "antd": "^4.4.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "compression": "^1.7.4",
     "echarts": "^4.8.0",
     "react": "^16.13.1",
